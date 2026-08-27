@@ -7,13 +7,13 @@ import { Message, type ChatMessage } from "@/components/gemini/Message";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Gemini — Assistente de IA em Dark Mode" },
+      { title: "J.A.R.V.I.S — Assistente de IA" },
       {
         name: "description",
         content:
-          "Interface de conversa estilo Gemini em dark mode: mensagens fluidas, blocos de código com destaque de sintaxe e barra de entrada flutuante.",
+          "Interface de conversa do J.A.R.V.I.S em dark mode: mensagens fluidas, blocos de código com destaque de sintaxe e barra de entrada flutuante.",
       },
-      { property: "og:title", content: "Gemini — Assistente de IA em Dark Mode" },
+      { property: "og:title", content: "J.A.R.V.I.S — Assistente de IA" },
       {
         property: "og:description",
         content:
@@ -84,7 +84,7 @@ function Index() {
 
       <main className="flex-1">
         <div className="mx-auto flex w-full max-w-[800px] flex-col gap-8 px-4 pt-6 pb-40">
-          <h1 className="sr-only">Conversa com o Gemini</h1>
+          <h1 className="sr-only">Conversa com o J.A.R.V.I.S</h1>
           {messages.map((m) => (
             <Message key={m.id} message={m} />
           ))}
@@ -95,9 +95,6 @@ function Index() {
       <div className="fixed inset-x-0 bottom-0 bg-gradient-to-t from-background via-background to-transparent pt-8 pb-4">
         <div className="mx-auto w-full max-w-[800px] px-4">
           <ChatInput onSend={send} />
-          <p className="mt-3 text-center text-xs text-muted-foreground">
-            O Gemini pode cometer erros, inclusive sobre pessoas. Verifique as respostas.
-          </p>
         </div>
       </div>
     </div>
