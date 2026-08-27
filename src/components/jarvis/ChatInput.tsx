@@ -16,14 +16,6 @@ export function ChatInput({ onSend }: { onSend: (text: string) => void }) {
   return (
     <div className="rounded-[28px] border border-surface-border bg-surface px-3 py-2.5">
       <div className="flex items-end gap-2">
-        <button
-          type="button"
-          aria-label="Adicionar arquivos ou imagens"
-          className="flex size-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-bubble hover:text-foreground"
-        >
-          <Plus className="size-5" />
-        </button>
-
         <textarea
           ref={ref}
           rows={1}
@@ -44,6 +36,14 @@ export function ChatInput({ onSend }: { onSend: (text: string) => void }) {
         />
 
         <div className="flex shrink-0 items-center gap-1">
+          <button
+            type="button"
+            aria-label="Adicionar arquivos ou imagens"
+            className="flex size-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-bubble hover:text-foreground"
+          >
+            <Plus className="size-5" />
+          </button>
+
           {value.trim() ? (
             <button
               type="button"
