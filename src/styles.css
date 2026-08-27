@@ -148,7 +148,7 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
 
-  /* Gemini dark surfaces */
+  /* J.A.R.V.I.S dark surfaces */
   --background: oklch(0.187 0.0025 286);
   --foreground: oklch(0.925 0.0025 286);
   --muted-foreground: oklch(0.72 0.006 286);
