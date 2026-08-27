@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import { Header } from "@/components/gemini/Header";
-import { ChatInput } from "@/components/gemini/ChatInput";
-import { Message, type ChatMessage } from "@/components/gemini/Message";
+import { Header } from "@/components/jarvis/Header";
+import { ChatInput } from "@/components/jarvis/ChatInput";
+import { Message, type ChatMessage } from "@/components/jarvis/Message";
 
 export const Route = createFileRoute("/")({
   head: () => ({
