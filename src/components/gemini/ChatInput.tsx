@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { ArrowUp, ChevronDown, Mic, Plus } from "lucide-react";
+import { ArrowUp, Mic, Plus } from "lucide-react";
 
 export function ChatInput({ onSend }: { onSend: (text: string) => void }) {
   const [value, setValue] = useState("");
@@ -28,7 +28,7 @@ export function ChatInput({ onSend }: { onSend: (text: string) => void }) {
           ref={ref}
           rows={1}
           value={value}
-          placeholder="Peça ao Gemini"
+          placeholder=""
           onChange={(e) => {
             setValue(e.target.value);
             e.target.style.height = "auto";
@@ -44,13 +44,6 @@ export function ChatInput({ onSend }: { onSend: (text: string) => void }) {
         />
 
         <div className="flex shrink-0 items-center gap-1">
-          <button
-            type="button"
-            className="hidden items-center gap-1 rounded-full px-3 py-1.5 text-[13px] text-muted-foreground transition-colors hover:bg-bubble hover:text-foreground sm:inline-flex"
-          >
-            2.5 Flash
-            <ChevronDown className="size-3.5" />
-          </button>
           {value.trim() ? (
             <button
               type="button"
